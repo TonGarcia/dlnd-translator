@@ -7,7 +7,7 @@ checkpoint
 *.data-*-of-*
 *.index
 *.meta
-
+.idea
 
 # C extensions
 *.so

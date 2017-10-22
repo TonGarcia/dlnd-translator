@@ -1,3 +1,4 @@
+# coding=utf-8
 import numpy as np
 import tensorflow as tf
 from tensorflow.python.layers.core import Dense
@@ -12,7 +13,7 @@ def _print_success_message():
 
 def test_text_to_ids(text_to_ids):
     test_source_text = 'new jersey is sometimes quiet during autumn , and it is snowy in april .\nthe united states is usually chilly during july , and it is usually freezing in november .\ncalifornia is usually quiet during march , and it is usually hot in june .\nthe united states is sometimes mild during june , and it is cold in september .'
-    test_target_text = 'new jersey est parfois calme pendant l\' automne , et il est neigeux en avril .\nles états-unis est généralement froid en juillet , et il gèle habituellement en novembre .\ncalifornia est généralement calme en mars , et il est généralement chaud en juin .\nles états-unis est parfois légère en juin , et il fait froid en septembre .'
+    test_target_text = "new jersey est parfois calme pendant l\' automne , et il est neigeux en avril .\nles états-unis est généralement froid en juillet , et il gèle habituellement en novembre .\ncalifornia est généralement calme en mars , et il est généralement chaud en juin .\nles états-unis est parfois légère en juin , et il fait froid en septembre ."
 
     test_source_text = test_source_text.lower()
     test_target_text = test_target_text.lower()
